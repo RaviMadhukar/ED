@@ -24,11 +24,36 @@ ul {
 }
 
 .section {
-    
+    background-color: #fff;
     min-height: 100vh;
     display: block;
-    z-index: 0;
     opacity: 1;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.section.back-section{
+    z-index: 1;
+}
+
+.section.active{
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 1s ease;
+}
+
+@keyframes slideSection{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
 }
 
 .hidden {
@@ -40,7 +65,7 @@ ul {
     padding-bottom: 50px;
 }
 
-/* aside */
+/* --------------------------------------------------------------------------------aside------------------------------------------------------------------- */
 
 
 .aside {
@@ -118,7 +143,6 @@ ul {
 
 .aside .nav li {
     display: block;
-    cursor: pointer;
 }
 
 .aside .nav li a {
@@ -127,6 +151,7 @@ ul {
     display: block;
     border-bottom: 1px solid gray;
     width: 300px;
+    color: white;
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -146,11 +171,8 @@ ul {
     transform: scale(1.05);
 }
 
-.main-content {
-    padding-left: 270px;
-}
 
-/* -------------------------Home Section---------------------------- */
+/* --------------------------------------------------------------------------Home Section---------------------------------------------------------------------- */
 
 .row {
     display: flex;
@@ -200,8 +222,8 @@ ul {
 
 .ban .title{
     position: absolute;
-    top: 41%;
-    left: 37%;
+    top: 37%;
+    left: 25.5%;
     width: 700px;
     height: 120px;
     animation: animatetitle 10s linear infinite;
@@ -284,14 +306,14 @@ ul {
     max-width: 100%;
 }
 
-/* ------------------------About Section-------------------------- */
+/* -----------------------------------------------------------------About Section---------------------------------------------------------------------- */
 
 .para {
     font-size: 25px;
     padding: 1% 2%;
     font-weight: 700;
     color: black;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 0px 1px 1px black;
 }
 .high{
     font-family: "Sofia", sans-serif;
@@ -300,18 +322,20 @@ ul {
 }
 
 .core{
-    max-width: 1100px;
+    max-width: 700px;
     max-height: 600px;
-    text-align: center;
-    margin-top: 40px;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
 }
 
 .core img{
-    width: 60%;
+    width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
-/* ------------------------Services Section----------------------  */
+/* -----------------------------------------------------------------Services Section------------------------------------------------------------------  */
 
 .service-all{
     max-width: 900px;
@@ -361,22 +385,61 @@ ul {
     line-height: 1.5;
 }
 
-/* -------------------Sub-service--------------------------- */
+/* -----------------------------------------------------------------------Sub-service-------------------------------------------------------------- */
 
 .work{
-    margin: 50px 20px;
-    font-size: 25px;
+    margin: 70px 20px;
+    font-size: 21px;
+}
+
+.work h2{
+    color: white;
 }
 
 .work .work-list{
     margin: 5px;
-    padding: 5px 30px;
-    color: #fff;
+    padding: 10px 50px;
     background-color: black;
     border-radius: 100px 0 100px 0;
+    transition: all 0.5s ease;
 }
 
-/* -------------------Contact Section----------------------- */
+.work .work-list:hover{
+    background-color: rgb(155, 164, 98);
+    transform: translateX(70px);
+}
+
+.sub-title{
+    font-size: 42px;
+    margin-left: -120px;
+    text-decoration: 6px underline gray;
+    color: black;
+    font-family: "Sofia", sans-serif;
+}
+
+/* -------------------------------------------------------------------relaunch Service----------------------------------------------------------- */
+
+ .direct{
+    text-decoration: none;
+    width: 100%;
+    margin: 50px 40px;
+    padding: 10px ;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: orange;
+    transition: all 0.1s ease ;
+ }
+
+ .direct h2{
+    color: red;
+ }
+
+ .direct:hover{
+    background-color: lightgreen;
+    transform: scale(1.09);
+ }
+/* ----------------------------------------------------------------------Contact Section------------------------------------------------------------------- */
 
 .contact-left{
     margin: 150px 20px;
@@ -483,7 +546,7 @@ form input, form textarea{
     display: block;
     margin: 0px auto;
     width: fit-content;
-    border: 5px solid white;
+    border: 5px solid gray;
     padding: 12px 40px;
     border-radius: 8px;
     text-decoration: none;
@@ -495,11 +558,11 @@ form input, form textarea{
 
 .btn:hover{
      background: rgb(155, 164, 98);
-     color:white;
-     border: 5px solid white;
+     color: black;
+     border: 5px solid black;
 }
 
-/* --------------------Trainning------------------------ */
+/* ---------------------------------------------------------------Trainning---------------------------------------------------------------- */
 
 .train-all{
     max-width: 1100px;
@@ -550,13 +613,18 @@ form input, form textarea{
 .take{
     width: 100%;
     margin: 10px;
-    padding: 30px;
+    padding: 20px 30px;
     text-align: center;
-    border-radius: 60%;
+    border-radius: 10px;
+}
+
+.take h2{
+    text-decoration: underline ;
 }
 
 .take p{
     font-size: 20px;
+    margin-top: 30px;
 }
 
 .point-left {
@@ -577,5 +645,19 @@ form input, form textarea{
     border-radius: 20px;
 }
 
+/* ---------------------------------------------------------------Copy-right-------------------------------------------------- */
 
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
+    font-size: 20px;
+    font-weight:bolder ;
+}
+
+.copyright i{
+    color:  rgb(255, 136, 0);
+    font-size: 25px;
+}
 
