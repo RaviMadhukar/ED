@@ -14,6 +14,10 @@ body {
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 ::before,
 ::after {
     box-sizing: border-box;
@@ -27,24 +31,6 @@ ul {
     background-color: #fff;
     min-height: 100vh;
     display: block;
-    opacity: 1;
-    position: fixed;
-    left: 270px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.section.back-section{
-    z-index: 1;
-}
-
-.section.active{
-    z-index: 2;
-    opacity: 1;
-    animation: slideSection 1s ease;
 }
 
 @keyframes slideSection{
@@ -54,10 +40,6 @@ ul {
     100%{
         transform: translateY(0%);
     }
-}
-
-.hidden {
-    display: none !important;
 }
 
 .section .container {
@@ -171,6 +153,9 @@ ul {
     transform: scale(1.05);
 }
 
+.main-container{
+    padding-left: 270px;
+}
 
 /* --------------------------------------------------------------------------Home Section---------------------------------------------------------------------- */
 
@@ -196,12 +181,11 @@ ul {
     text-underline-offset: 6px;
     color: black;
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .top {
     font-size: 65px;
-    margin-left: -120px;
     text-decoration: 6px underline gray;
     color: black;
     font-family: "Sofia", sans-serif;
@@ -218,33 +202,6 @@ ul {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-}
-
-.ban .title{
-    position: absolute;
-    top: 37%;
-    left: 25.5%;
-    width: 700px;
-    height: 120px;
-    animation: animatetitle 10s linear infinite;
-}
-
-@keyframes animatetitle{
-    0%{
-        transform: rotateY(0deg);
-    }
-    25%{
-        transform: rotateY(90deg);
-    }
-    50%{
-        transform: rotateY(180deg);
-    }
-    75%{
-        transform: rotateY(90deg);
-    }
-    100%{
-        transform: rotateY(0deg);
-    }
 }
 
 #slider {
@@ -324,9 +281,8 @@ ul {
 .core{
     max-width: 700px;
     max-height: 600px;
-    margin: auto;
-    padding: 20px;
-    justify-content: center;
+    margin: 10px 20%;
+    background-color: aqua;
 }
 
 .core img{
@@ -339,7 +295,7 @@ ul {
 
 .service-all{
     max-width: 900px;
-    margin: 40px 80px;
+    margin: 0 80px;
 }
 
 .service-item{
@@ -387,9 +343,15 @@ ul {
 
 /* -----------------------------------------------------------------------Sub-service-------------------------------------------------------------- */
 
+.sub-title{
+    font-size: 42px;
+    text-decoration: 6px underline gray;
+    color: black;
+    font-family: "Sofia", sans-serif;
+}
+
 .work{
-    margin: 70px 20px;
-    font-size: 21px;
+    margin: 80px -500px;
 }
 
 .work h2{
@@ -409,13 +371,6 @@ ul {
     transform: translateX(70px);
 }
 
-.sub-title{
-    font-size: 42px;
-    margin-left: -120px;
-    text-decoration: 6px underline gray;
-    color: black;
-    font-family: "Sofia", sans-serif;
-}
 
 /* -------------------------------------------------------------------relaunch Service----------------------------------------------------------- */
 
@@ -450,13 +405,14 @@ ul {
     color: black;
     font-family:Arial, Helvetica, sans-serif ;
     font-weight: 700;
-    margin-top: 20px;
     font-size: 25px;
+    margin: -30px 0 0 40px;
 }
 
-.contact-left p i{
+.contact-left i{
     color:  rgb(169, 176, 124);
-    margin-right: 15px;
+    margin-top: 20px;
+    font-size: 30px;
 }
 
 .social-icons{
@@ -466,6 +422,7 @@ ul {
 .social-icons i{
     margin: 10px 0;
     color:  rgb(169, 176, 124);
+    font-size: 60px;
     cursor: pointer;
 }
 
@@ -573,7 +530,7 @@ form input, form textarea{
 .train-item{
     flex: 25%;
     margin: 12px;
-    max-width: 300px;
+    width: 300px;
     border-radius: 10px;
 }
 
@@ -648,7 +605,9 @@ form input, form textarea{
 /* ---------------------------------------------------------------Copy-right-------------------------------------------------- */
 
 .copyright{
+    position: fixed;
     width: 100%;
+    bottom: 0;
     text-align: center;
     padding: 10px 0;
     background-color: black;
@@ -661,3 +620,10 @@ form input, form textarea{
     font-size: 25px;
 }
 
+/* ---------------------------------------------------------------mobile use------------------------------------------------- */
+
+
+
+.log {
+    display: none;
+}

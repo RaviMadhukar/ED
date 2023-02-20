@@ -1,37 +1,32 @@
-//            Aside 
-
 const nav = document.querySelector(".nav"),
       navList = nav.querySelectorAll("li"),
-      totalNavList = navList.length,
-      allSection =document.querySelectorAll(".section"),
-      totalSection = allSection.length;
+      totalNavList = navList.length;
+
       for(let i=0; i<totalNavList; i++)
       {
         const a = navList[i].querySelector("a");
         a.addEventListener("click", function()
-        {   
-            for(let i=0; i<totalSection; i++)
-               {
-                     allSection[i].classList.remove("back-section");
-               }
+        {
             for(let j=0; j<totalNavList; j++)
             {
-                if(navList[j].querySelector("a").classList.contains("active"))
-                {
-                    allSection[j].classList.add("back-section");
-                }
                 navList[j].querySelector("a").classList.remove("active");
             }
-            this.classList.add("active")
+            this.classList.add("active") 
             showSection(this);
         })
       }
-      function showSection(element)
-      {
-        for(let i=0; i<totalSection; i++)
-        {
-           allSection[i].classList.remove("active");
-        }
-        const target = element.getAttribute("href").split("#")[1];
-        document.querySelector("#" + target).classList.add("active")
+
+      var sidemuneu = document.getElementById("sidemuneu");
+
+      function openmenu() {
+          sidemuneu.style.left = "0";
+          document.getElementById("openn").classList.remove("active-bar");
+          document.getElementById("closee").classList.add("active-bar");
+      }
+      
+      function closemenu() {
+          sidemuneu.style.left = "-300px";
+              document.getElementById("closee").classList.remove("active-bar");
+              document.getElementById("openn").classList.add("active-bar");
+      
       }

@@ -19,14 +19,14 @@
     <div class="main-container">
         <!-- =============Aside Start============== -->
         <!-- =============Aside End============== -->
-        <div class="aside">
+        <div class="aside" id="sidemuneu">
             <div class="logo">
                 <a href="#home"><img src="image/titlelogo.png"></a>
             </div>
             <div class="nav-toggler">
                 <span></span>
             </div>
-            <ul class="nav">
+            <ul class="nav" id="hide">
                  <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
                  <li><a href="#about"><i class="fa fa-user"></i>About Us</a></li>
                  <li><a href="#service"><i class="fa fa-clone"></i>Services</a></li>
@@ -38,15 +38,18 @@
         <!-- ==============Main Content Start============== -->
         <div class="main-content">
             <!-- ===========Home Section Start============= -->
+            <div class="log">
+                <a href="#home"><img src="image/titlelogo.png"></a>
+                <i class="fas fa-bars active-bar" onclick="openmenu()" id="openn"></i>
+                <i class="fas fa-times " onclick="closemenu()" id="closee"></i>
+            </div>
+            
             <section class="home active section" id="home">
                 <div class="container">
                     <div class="row">
-                        <h1 class="top">&#160 &#160 &#160 &#160 Home &#160 </h1>
+                        <h1 class="top">Home &#160 </h1>
                         <div class="ban">
-                            <img src="image/stand.jpg">
-                            <div class="title">
-                                <img src="image/bgre.png">
-                            </div>
+                            <img src="image/main1.png">
                         </div>
                         <div class="middle">
                             <h2>We Are Working On These Platform</h2>
@@ -68,7 +71,7 @@
                                 <div class="service-item">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <a href="#ac"><i class="fa-solid fa-file-invoice"></i></a>
+                                            <a href="#ac"><i class="fa-solid fa-file-invoice sub-link"></i></a>
                                         </div>
                                         <h4>Account Management</h4>
                                         <p>We provide account management services on all e-commerce portals. Details about some of the major portals are given below.</p>
@@ -79,7 +82,7 @@
                                 <div class="service-item">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <a href="#web"><i class="fa-solid fa-laptop"></i></a>
+                                            <a href="#web"><i class="fa-solid fa-laptop sub-link"></i></a>
                                         </div>
                                         <h4>Website Design & Development</h4>
                                         <p>The reasonable web design and development services combined with a technical approach permit us to broaden the current functionalities.</p>
@@ -90,7 +93,7 @@
                                 <div class="service-item">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <a href="#dm"><i class="fa-solid fa-shop"></i></a>
+                                            <a href="#dm"><i class="fa-solid fa-shop sub-link"></i></a>
                                         </div>
                                         <h4>Digital Marketing</h4>
                                         <p>We offer all sorts of Digital Marketing Services like Social Media Management, Campaign Designing and Advertising, Media Buying and Planning.</p>
@@ -101,7 +104,7 @@
                                 <div class="service-item">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <a href="#listing"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#listing"><i class="fa-solid fa-pen sub-link"></i></a>
                                         </div>
                                         <h4>Cataloging & Product Listing</h4>
                                         <p>Organize catalogs and list products with variations, relevant content, and targeted keyword advertising on Ecommerce Platfroms</p>
@@ -112,7 +115,7 @@
                                 <div class="service-item">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <a href="#ads"><i class="fa-solid fa-rectangle-ad"></i></a>
+                                            <a href="#ads"><i class="fa-solid fa-rectangle-ad sub-link"></i></a>
                                         </div>
                                         <h4>Advertising Management</h4>
                                         <p>We have the best advertising management team who will help you to increase the visibility of your product and maximize your sales.</p>
@@ -123,7 +126,7 @@
                                 <div class="service-item">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <a href="#ar"><i class="fa-solid fa-power-off"></i></a>
+                                            <a href="#ar"><i class="fa-solid fa-power-off sub-link"></i></a>
                                         </div>
                                         <h4>Account Reinstatement</h4>
                                         <p>If you have a suspended seller account, & you want to get reinstatement and start selling again!</p>
@@ -140,7 +143,7 @@
             <section class="about section " id="about">
                 <div class="container">
                     <div class="row">
-                        <h1 class="top">&#160 &#160 &#160 &#160 About Us &#160 </h1>
+                        <h1 class="top"> About Us &#160 </h1>
                         <div class="ban">
                             <img src="image/about.png">
                         </div>
@@ -181,14 +184,14 @@
             <section class="service section" id="service">
                 <div class="container">
                     <div class="row">
-                        <h1 class="top">&#160 &#160 &#160 &#160 Services &#160 </a></h1>
+                        <h1 class="top"> Services &#160 </a></h1>
                         <div class="service-all">
                             <div class="row">
                                 <!----- Service Item Start----->
                                 <div class="service-item">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <a href="#ecom"><i class="fa-solid fa-globe"></i></a>
+                                            <a href="#ecom"><i class="fa-solid fa-globe sub-link"></i></a>
                                         </div>
                                         <h4>E-Commerce Service</h4>
                                         <p>We offer a suite of services that cover all aspects of selling online – from account setup and order fulfillment to promotional activities.</p>
@@ -199,7 +202,7 @@
                                 <div class="service-item">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <a href="#web"><i class="fa-solid fa-laptop"></i></a>
+                                            <a href="#web"><i class="fa-solid fa-laptop sub-link"></i></a>
                                         </div>
                                         <h4>Website Design & Development</h4>
                                         <p>The reasonable web design and development services combined with a technical approach permit us to broaden the current functionalities.</p>
@@ -210,7 +213,7 @@
                                 <div class="service-item">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <a href="#dm"><i class="fa-solid fa-desktop"></i></a>
+                                            <a href="#dm"><i class="fa-solid fa-desktop sub-link"></i></a>
                                         </div>
                                         <h4>Digital Marketing</h4>
                                         <p>We offer all sorts of Digital Marketing Services like Social Media Management, Campaign Designing and Advertising, &#160&#160Media Buying and Planning.</p>
@@ -221,7 +224,7 @@
                                 <div class="service-item">
                                     <div class="service-item-inner">
                                         <div class="icon">
-                                            <a href="#cs"><i class="fa-solid fa-pen"></i></a>
+                                            <a href="#cs"><i class="fa-solid fa-pen sub-link"></i></a>
                                         </div>
                                         <h4>Compliance Service</h4>
                                         <p>We'll help you build a better Digital &#160 Presence! protect your products from being mapped and get A+ listings of your &#160&#160products.  </p>
@@ -238,7 +241,7 @@
             <section class="Sub-Service section " id="ecom">
                 <div class="container">
                     <div class="row">
-                        <h1 class="sub-title">&#160 &#160 &#160 &#160 Service <i class="fa-solid fa-greater-than"></i> E -Commerce Service </h1>
+                        <h1 class="sub-title"> Service <i class="fa-solid fa-greater-than"></i> E -Commerce Service </h1>
                         <div class="work">
                             <div class="work-list">
                                 <a href="#ac"><h2>Account Management</h2></a>
@@ -267,7 +270,7 @@
             <section class="Account section" id="ac">
                 <div class="container">
                     <div class="row">
-                        <h1 class="sub-title">&#160 &#160 &#160 &#160 E -Commerce Service <i class="fa-solid fa-greater-than"></i> Account Managemnet </h1>
+                        <h1 class="sub-title">E -Commerce Service <i class="fa-solid fa-greater-than"></i> Account Managemnet </h1>
                         <div class="ban">
                             <img src="image/Account Management1.jpg">
                         </div>
@@ -297,7 +300,7 @@
             <section class="Ads section " id="ads">
                 <div class="container">
                     <div class="row">
-                        <h1 class="sub-title">&#160 &#160 &#160 &#160 E -Commerce Service <i class="fa-solid fa-greater-than"></i>Advertisement Management </h1>
+                        <h1 class="sub-title"> E -Commerce Service <i class="fa-solid fa-greater-than"></i>Advertisement Management </h1>
                         <div class="ban">
                             <img src="image/ads1.png">
                         </div>
@@ -307,17 +310,14 @@
                             
                             We have the best advertising management team who will help you to increase the visibility of your product and maximize your sales.
                         </p>
-                        <div class="middle">
-                            <h2>Why Advertisment (Ads) is important for our business...</h2>
-                        </div>
-                        <div class="point-left">
-                            <p><i class="fa-solid fa-hand-point-right"></i>This Increase Customer Reach</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Ads Increases Brand Awareness and Product Awareness</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Ads Target Potential Customer</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Effective Ads Take Less Cost & Gives High ROI</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>It Take Less Time and Increase More Trafic on your product</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Effective Ads Gives Faster Results.</p>
-                        </div>
+                        <p class="para"><br><span class="high">Q</span> Why Advertisment (Ads) is important for our business?? 
+                            <br><br>1. This Increase Customer Reach
+                            <br><br>2. Ads Increases Brand Awareness and Product Awareness 
+                            <br><br>3. Ads Target Potential Customer
+                            <br><br>4. Effective Ads Take Less Cost & Gives High ROI
+                            <br><br>5. It Take Less Time and Increase More Trafic on your product
+                            <br><br>6. Effective Ads Gives Faster Results.
+                        </p>
                         <div class="middle">
                             <h2>Boost Your Sales With!!</h2>
                         </div>
@@ -347,7 +347,7 @@
             <section class="Sale section " id="sbs">
                 <div class="container">
                     <div class="row">
-                        <h1 class="sub-title">&#160 &#160 &#160 &#160 E -Commerce Service <i class="fa-solid fa-greater-than"></i>Sale Boost Service </h1>
+                        <h1 class="sub-title"> E -Commerce Service <i class="fa-solid fa-greater-than"></i>Sale Boost Service </h1>
                         <div class="ban">
                             <img src="image/saleboost1.jpg">
                         </div>
@@ -406,7 +406,7 @@
             <section class="Relaunch section " id="ar">
                 <div class="container">
                     <div class="row">
-                        <h1 class="sub-title">&#160 &#160 &#160 &#160 E -Commerce Service <i class="fa-solid fa-greater-than"></i>Account Reinstatement / Relaunch </h1>
+                        <h1 class="sub-title"> E -Commerce Service <i class="fa-solid fa-greater-than"></i>Account Relaunch </h1>
                         <div class="ban">
                             <img src="image/relaunch1.png">
                         </div>
@@ -414,19 +414,16 @@
                             If you have a suspended seller account, & you want to get reinstatement and start selling again!<br>
                             You are in the right place, We will give you the best chance at reinstating your account with the correct customized suspension appeal letter and plan of action (POA) for your situation.
                         </p>
-                        <div class="middle">
-                            <h2>Main reasons for an Account suspension:-</h2>
-                        </div>
-                        <div class="point-left">
-                            <p><i class="fa-solid fa-hand-point-right"></i>Multiple accounts held by the same person.</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Product listing is reported as a fake or counterfeit product.</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Product listing violates Amazon's Marketplace Items Condition Guidelines. e.g. used items which are sold as new.</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Safety complaints from customers.</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>High negative Customer Experience Rating (NCX).</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Selling restricted/prohibited Items.</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Order Defect Rate (ODR) is too high.</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Other policy violations.</p>
-                        </div>
+                        <p class="para"><br><span class="high">#</span> Main reasons for an Account suspension:-
+                            <br><br>1. Multiple accounts held by the same person.
+                            <br><br>2. Product listing is reported as a fake or counterfeit product.
+                            <br><br>3. Product listing violates Amazon's Marketplace Items Condition Guidelines. e.g. used items which are sold as new.
+                            <br><br>4. Safety complaints from customers.
+                            <br><br>5. High negative Customer Experience Rating (NCX).
+                            <br><br>6. Selling restricted/prohibited Items.
+                            <br><br>7. Order Defect Rate (ODR) is too high.
+                            <br><br>8. Other policy violations.
+                        </p>
                         <div class="middle">
                             <h2>Ways to Prevent Suspension or Reinstatement</h2>
                         </div>
@@ -467,7 +464,7 @@
             <section class="Listing section " id="listing">
                 <div class="container">
                     <div class="row">
-                        <h1 class="sub-title">&#160 &#160 &#160 &#160 E -Commerce Service <i class="fa-solid fa-greater-than"></i> Listing/Cataloging </h1>
+                        <h1 class="sub-title"> E -Commerce Service <i class="fa-solid fa-greater-than"></i> Listing/Cataloging </h1>
                         <div class="ban">
                             <img src="image/listing1.png">
                         </div>
@@ -520,7 +517,7 @@
             <section class="Store section " id="store">
                 <div class="container">
                     <div class="row">
-                        <h1 class="sub-title">&#160 &#160 &#160 &#160 E -Commerce Service <i class="fa-solid fa-greater-than"></i> Amazon Store</h1>
+                        <h1 class="sub-title"> E -Commerce Service <i class="fa-solid fa-greater-than"></i> Amazon Store</h1>
                         <div class="ban">
                             <img src="image/amazon store1.png">
                         </div>
@@ -528,17 +525,14 @@
                             An Amazon Store is basically your own custom branded website on Amazon that allows registered brands to showcase their products — without any distractions from competitors' products or ads. It’ll have the look and feel of a real ecommerce store, with Amazon’s huge audience reach.  
                             <br><br>These stores provide a unique and customizable shopping experience for customers that includes a variety of features such as product videos, 360-degree views, and customer reviews. Brands can also use the store to promote their products through targeted marketing campaigns and sponsorships. Amazon Brand Stores are available to manufacturers, distributors, and sellers who have registered their brand with Amazon.
                         </p>
-                        <div class="middle">
-                            <h2>Benefits of an Amazon Brand Store</h2>
-                        </div>
-                        <div class="point-left">
-                            <p><i class="fa-solid fa-hand-point-right"></i>It helps you come across as a genuine brand</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>It helps find multiple products on the same page</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>It helps you uptick your organic rankings on Amazon</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Helps you market new products to already existing customers</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>Allows a smoother mobile shopping experience</p>
-                            <p><i class="fa-solid fa-hand-point-right"></i>It can be used as a landing page on Amazon</p>
-                        </div>
+                        <p class="para"><br><span class="high">#</span>Benefits of an Amazon Brand Store
+                            <br><br>1. It helps you come across as a genuine brand.
+                            <br><br>2. It helps find multiple products on the same page.
+                            <br><br>3. It helps you uptick your organic rankings on Amazon.
+                            <br><br>4. Helps you market new products to already existing customers.
+                            <br><br>5. Allows a smoother mobile shopping experience.
+                            <br><br>6. It can be used as a landing page on Amazon.
+                        </p>
                         <div class="direct">
                             <a href="#contact"><h2>Click Here to Contact Us..</h2></a>
                         </div>
@@ -555,7 +549,7 @@
             <section class="Web section " id=web>
                 <div class="container">
                     <div class="row">
-                        <h1 class="sub-title">&#160 &#160 &#160 &#160 Service <i class="fa-solid fa-greater-than"></i> Website Design & Development  </h1>
+                        <h1 class="sub-title"> Service <i class="fa-solid fa-greater-than"></i> Website Design & Development  </h1>
                         <div class="ban">
                             <img src="image/wdd1.jpg">
                         </div>
@@ -581,7 +575,7 @@
             <section class="digital section " id="dm">
                 <div class="container">
                     <div class="row">
-                        <h1 class="sub-title">&#160 &#160 &#160 &#160 Service <i class="fa-solid fa-greater-than"></i> Digital Marketing </h1>
+                        <h1 class="sub-title"> Service <i class="fa-solid fa-greater-than"></i> Digital Marketing </h1>
                         <div class="ban">
                             <img src="image/Digital.jpg">
                         </div>
@@ -708,7 +702,7 @@
             <section class="compliance section " id="cs">
                 <div class="container">
                     <div class="row">
-                        <h1 class="sub-title">&#160 &#160 &#160 &#160 Service <i class="fa-solid fa-greater-than"></i> Compliance Service </h1>
+                        <h1 class="sub-title"> Service <i class="fa-solid fa-greater-than"></i> Compliance Service </h1>
                         <div class="ban">
                             <img src="image/Compliance1.png">
                         </div>
@@ -719,33 +713,33 @@
                         </div>
                         <p class="para">Trademark registration is the process of obtaining legal protection for a trademark. A trademark is a distinctive symbol, design, or expression that identifies a product or service and distinguishes it from those of others. By registering a trademark, the owner can legally prevent others from using a similar mark for similar products or services, which can lead to consumer confusion.<br><br> The process of trademark registration typically involves conducting a trademark search, filing a trademark application with the relevant government agency, and potentially going through an examination and opposition process. Once the trademark is registered, the owner can use the ® symbol to indicate that the trademark is legally protected.
                             <br><br>Benefits of Trademark Registration...
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 1. Legal protection
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 2. Nationwide recognition
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 3. Evidence of ownership
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 4. Easier enforcement
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 5. Potential licensing and monetization opportunities
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 6. Use as collateral
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 7. Streamlined border protection
+                            <br><br>1. Legal protection
+                            <br><br>2. Nationwide recognition
+                            <br><br>3. Evidence of ownership
+                            <br><br>4. Easier enforcement
+                            <br><br>5. Potential licensing and monetization opportunities
+                            <br><br>6. Use as collateral
+                            <br><br>7. Streamlined border protection
                         </p>
                         <div class="middle">
                             <h2>1. GST...</h2>
                         </div>
                         <p class="para">The GST was introduced in India to simplify the indirect tax structure, increase efficiency, improve competitiveness, increase revenue, reduce corruption, and improve tax compliance.
                             <br><br>The following are some of the reasons why GST was implemented:
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 1. Simplification of indirect tax structure.
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 2. Increased efficiency.
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 3. Improved competitiveness.
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 4. Increased revenue.
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 5. Improved tax compliance.
+                            <br><br>1. Simplification of indirect tax structure.
+                            <br><br>2. Increased efficiency.
+                            <br><br>3. Improved competitiveness.
+                            <br><br>4. Increased revenue.
+                            <br><br>5. Improved tax compliance.
                             <br><br><br>Documents Required for GST Registration....
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 1.   PAN of the Applicant
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 2.   Aadhaar card
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 3.   Proof of business registration or Incorporation certificate
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 4.   Identity and Address proof of Promoters/Director with Photographs
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 5.   Address proof of the place of business
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 6.   Bank Account statement/Cancelled cheque
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 7.   Digital Signature
-                            <br><br>&nbsp&nbsp&nbsp&nbsp 8.   Letter of Authorization/Board Resolution for Authorized Signatory
+                            <br><br>1. PAN of the Applicant
+                            <br><br>2. Aadhaar card
+                            <br><br>3. Proof of business registration or Incorporation certificate
+                            <br><br>4. Identity and Address proof of Promoters/Director with Photographs
+                            <br><br>5. Address proof of the place of business
+                            <br><br>6. Bank Account statement/Cancelled cheque
+                            <br><br>7. Digital Signature
+                            <br><br>8. Letter of Authorization/Board Resolution for Authorized Signatory
                         </p>
                         <div class="direct">
                             <a href="#contact"><h2>Click Here to Contact Us..</h2></a>
@@ -762,7 +756,7 @@
             <section class="contact section " id="contact">
                 <div class="container">
                     <div class="row">
-                        <h1 class="top">&#160 &#160 &#160 &#160 Contact Us &#160 </h1>
+                        <h1 class="top"> Contact Us &#160 </h1>
                         <div class="row ">
                             <div class="contact-right">
                                 <div class="book">
@@ -780,12 +774,9 @@
                                 <span id="msg"></span>
                             </div>
                             <div class="contact-left">
-                                <p><i class="fa fa-envelope"></i> edgeofdigital@gmail.com</p>
-                                <p><i class="fa fa-mobile-phone"></i> +91 9262619136</p>
-                                <p><i class="fa-solid fa-location-dot"></i> Rukanpura Baily Road 
-                                                                            &#160&#160&#160&#160&#160&#160Adarsh Bihar Colony Lane 
-                                                                            &#160&#160&#160&#160&#160&#160No.2 House No. A3 
-                                                                            &#160&#160&#160&#160&#160&#160Patna-800014</p>
+                                <i class="fa fa-envelope"></i> <p> edgeofdigital@gmail.com</p>
+                                <i class="fa fa-mobile-phone"></i> <p> +91 9262619136</p>
+                                <i class="fa-solid fa-location-dot"></i> <p> Rukanpura Baily Road Adarsh Bihar Colony Lane No.2 House No. A3 Patna-800014</p>
                                 <div class="social-icons">
                                     <h3 class="follow">Follow Us</h3>
                                     <a href="https://www.facebook.com/profile.php?id=100016775323314"><i class="fa fa-facebook-square fa-3x"></i></a>
@@ -803,7 +794,7 @@
             <section class="trainning section" id="training">
                 <div class="container">
                     <div class="row">
-                        <h1 class="top">&#160 &#160 &#160 &#160 Trainning &#160 </h1>
+                        <h1 class="top"> Trainning &#160 </h1>
                         <div class="ban">
                             <img src="image/train.jpg">
                         </div>
