@@ -294,14 +294,12 @@ ul {
 /* -----------------------------------------------------------------Services Section------------------------------------------------------------------  */
 
 .service-all{
-    max-width: 900px;
     margin: 0 80px;
 }
 
 .service-item{
     flex: 40%;
     margin: 45px;
-    max-width: 400px;
     border-radius: 10px;
 }
 
@@ -311,8 +309,6 @@ ul {
     border: 3px solid rgb(169, 176, 124);
     border-radius: 10px;
     padding: 30px 10px;
-    width: 100%;
-    height: 250px;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -397,8 +393,7 @@ ul {
 /* ----------------------------------------------------------------------Contact Section------------------------------------------------------------------- */
 
 .contact-left{
-    margin: 150px 20px;
-    flex-basis: 35%;
+    margin: 20px 10px;
 }
 
 .contact-left p{
@@ -450,24 +445,15 @@ ul {
 }
 
 .contact-right{
-    background-color: rgb(169, 176, 124);
-    padding: 2%;
-    border-radius: 10px;
-    border: 3px solid black;
-    margin-top: 50px;
-    flex-basis: 60%;
-    transition: all 0.3s ease;
-}
-
-.contact-right:hover{
-    box-shadow: 0 0 50px black;
-    border: 3px solid white;
-    transform: scale(1.05);
+    margin: 20px 10px;
+    background: linear-gradient(white,rgb(169, 176, 124));
+    padding: 40px;
+    border-radius: 20px;
 }
 
 .book{
     display: block;
-    background-color: white;
+    background-color: rgb(169, 176, 124);
     margin: 0px auto;
     width: fit-content;
     border: 5px solid black;
@@ -480,6 +466,7 @@ ul {
 }
 
 .contact-right h2{
+    color: black;
     text-align: center;
 }
 
@@ -522,15 +509,14 @@ form input, form textarea{
 /* ---------------------------------------------------------------Trainning---------------------------------------------------------------- */
 
 .train-all{
-    max-width: 1100px;
-    margin: 30px 60px;
+    max-width: 1000px;
+    margin: 30px 50px;
     color: black;
 }
 
 .train-item{
     flex: 25%;
     margin: 12px;
-    width: 300px;
     border-radius: 10px;
 }
 
@@ -539,8 +525,6 @@ form input, form textarea{
     border: 3px solid rgb(169, 176, 124);
     border-radius: 10px;
     padding: 20px 10px;
-    width: 300px;
-    height: 340px;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -597,9 +581,15 @@ form input, form textarea{
 }
 
 .point-right{
+    margin: 20px 10px;
     background: linear-gradient(white, black);
     padding: 40px;
     border-radius: 20px;
+}
+
+.point-right h2{
+    text-align: center;
+    color: black;
 }
 
 /* ---------------------------------------------------------------Copy-right-------------------------------------------------- */

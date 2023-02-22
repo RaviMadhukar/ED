@@ -2,6 +2,7 @@
 
     .section .container {
         margin-left: 0px;
+        width: 100%;
     }
 
     .main-container {
@@ -16,7 +17,7 @@
         font-size: 55px;
         margin-left: 20px;
     }
-
+    
     .service-item {
         flex: 100%;
         margin: 10px;
@@ -45,23 +46,10 @@
     }
 
     .train-item {
-        flex-basis: 100%;
-        margin: 10px 32px;
+        flex-basis: 80%;
+        margin: 10px;
     }
 
-    .contact-right {
-        flex-basis: 100%;
-        margin: 20px;
-    }
-
-    .book {
-        font-size: 20px;
-    }
-
-    .contact-left {
-        flex-basis: 100%;
-        margin: 20px 30px;
-    }
 
     .aside .fas {
         display: block;
@@ -104,9 +92,10 @@
         color: rgb(169, 176, 124);
         font-size: 40px;
         display: none;
-        position: absolute;
+        position: fixed;
         right: 0;
-        margin:-70px 30px;
+        margin:-65px 30px;
+        z-index: 10;
         cursor: pointer;
         transition: left 0.1s;
     }
@@ -114,5 +103,4 @@
     .log .fas.active-bar{
         display: block;
     }
-
 }
