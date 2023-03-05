@@ -416,20 +416,18 @@ ul {
 
 .social-icons i{
     margin: 10px 0;
-    color:  rgb(169, 176, 124);
     font-size: 60px;
-    cursor: pointer;
 }
 
 .social-icons a{
     text-decoration: none;
+    color:rgb(169, 176, 124);
     margin-right: 15px;
     display: inline-block;
-    transition: transform 0.1s;
+    transition: transform 0.5s;
 }
 
-.social-icons i:hover{
-    color: black;
+.social-icons a:hover{
     transform: translateY(10px);
 }
 
@@ -516,8 +514,8 @@ form input, form textarea{
 }
 
 .train-item{
-    flex: 25%;
-    margin: 12px;
+    flex: 40%;
+    margin: 40px;
     border-radius: 10px;
 }
 
