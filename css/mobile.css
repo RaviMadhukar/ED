@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 530px){
     .section{
         width: 530px;
@@ -94,12 +93,12 @@
     }
 
     .log img{
-        width: 60%;
-        padding: 20px;
+        width: 50%;
+        padding: 10px;
     }
 
     .log .fas {
-        color: rgb(169, 176, 124);
+        color: red;
         font-size: 40px;
         display: none;
         position: fixed;
@@ -115,7 +114,7 @@
     }
 
     .book{
-        font-size: 20px;
+        font-size: 15px;
     }
     
     .cont
